@@ -1,0 +1,354 @@
+:root {
+    --color-darkgray: #303030;
+    --color-verydarkgray: #242424;
+    --color-black: #111111;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-darkgray);
+    font-size: 1.1rem;
+    color: var(--color-white);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar Starts Here */
+nav {
+    display: flex;
+    background-color: #111111;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem;
+}
+
+ul.navbar-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar-item {
+    list-style: none;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    color: var(--color-white);
+}
+
+.navbar-item.current-navbar-item {
+    text-decoration: underline 2px solid;
+}
+/* Navbar Ends Here */
+
+/* Home Page Starts Here */
+.container-home-page{
+    display: flex;
+    padding: 2rem 5%;
+}
+
+.container-profile-foto{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    /* border: solid 2px blue; */
+}
+
+.profile-picture {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.container-article{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: fit-content;
+    padding-top: 2rem;
+    /* border: solid 2px red; */
+}
+
+.bio-container {
+    height: 30%;
+    /* border: solid 2px green; */
+}
+
+.bio-container > h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+.container-article p {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+/* Homepage Cards Start */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    margin-top: 1rem;
+    /* border: solid 2px; */
+}
+
+.nav-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-cards h2, p {
+    padding: 0.2rem;
+}
+
+.nav-cards a {
+    background: var(--color-black);
+    padding: 0.4rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+    color: var(--color-white);
+}
+
+.card-foto {
+    border-radius: 16px;
+    width: 100%;
+}
+/* Homepage Cards End */
+/* Home Page Ends Here */
+
+/* Resume Starts here */
+.container-cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem 20%;
+}
+
+.container-cv h1 {
+    align-self: center;
+    padding-bottom: 1rem;
+}
+
+.cv-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 16px;
+    background-color: var(--color-verydarkgray);
+}
+
+.cv-info h2 {
+    padding: 1rem;
+    align-self: center;
+}
+
+.cv-info dt {
+    padding: .5rem 1rem;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cv-info dd {
+    padding: 1rem 2rem;
+}
+/* Resume Ends here */
+
+
+/* Contact Page Starts Here */
+.container-contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+.container-contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-verydarkgray);
+    border-radius: 16px;
+}
+
+.container-contact-info a {
+    color: var(--color-white);
+    margin: .5rem;
+}
+
+.container-user-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--color-verydarkgray);
+    border-radius: 16px;
+}
+
+.container-user-msg h3 {
+    padding: .5rem;
+}
+
+input[type=text] {
+    width: 66%;
+    padding: 0.5rem;
+}
+
+textarea{
+    resize: none;
+    margin-top: 1rem;
+}
+
+button.send-btn {
+    margin-top: 1rem;
+    padding: .25rem;
+    width: 25%;
+}
+/* Contact Page Ends Here */
+
+
+/* Project Page Starts Here */
+
+.container-projects-page {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-projects-page h1 {
+    padding: .5rem;
+    width: 90%;
+    background-color: var(--color-verydarkgray);
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+}
+
+/* Not programming Starts Here */
+.container-project-notprogramming {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container-slideshow{
+    width: 20%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3.141%;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    animation: slideshow 20s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    padding: 2rem;
+}
+
+.slide-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideshow {
+    0% { left: 0; }
+    10% { left: 0; }
+    15% { left: -100%; }
+    25% { left: -100%; }
+    30% { left: -200%; }
+    40% { left: -200%; }
+    45% { left: -300%; }
+    55% { left: -300%; }
+    60% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -100%; }
+    85% { left: -100%; }
+    90% { left: 0%; }
+}
+/* Not programming Ends Here */
+/* Project Page Ends Here */
+
+@media screen and (max-width: 1024px) {
+
+    ul.navbar-links{
+        flex-direction: column;
+    }
+
+    .container-home-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-article {
+        width: 95%;
+    }
+    
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .nav-cards {
+        width: 100%;
+    }
+
+    .container-cv {
+        padding: 2rem 5%;
+    }
+
+    .container-project-notprogramming {
+        flex-direction: column;
+    }
+
+    .container-slideshow {
+        width: 100%;
+    }
+
+    .project-text{
+        width: 100%;
+    }
+}
