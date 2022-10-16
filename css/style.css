@@ -142,6 +142,7 @@ ul.navbar-links {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 3rem 20%;
+    gap: 2rem;
 }
 
 .container-cv h1 {
@@ -153,7 +154,6 @@ ul.navbar-links {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-bottom: 2rem;
     width: 100%;
     border-radius: 16px;
     background-color: var(--color-verydarkgray);
